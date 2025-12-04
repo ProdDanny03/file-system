@@ -6,4 +6,4 @@ def resolve_path(path: str|Path) -> Path:
     elif path is Path:
         return path
     else:
-        raise TypeError(f'path must be str or Path, not {type(path)}')
+        raise TypeError('path must be str or Path, not ' + type(path))
