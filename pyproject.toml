@@ -1,0 +1,14 @@
+[project]
+name = "file_system"
+version = "0.1.0"
+description = "Helps with file/folder system operations"
+authors = [
+    { name="Danny" }
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
