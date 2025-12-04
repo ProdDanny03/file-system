@@ -6,7 +6,7 @@ authors = [
     { name="Danny" }
 ]
 
-requires-python = ">=3.14uv"
+requires-python = ">=3.14"
 
 [build-system]
 requires = ["setuptools>=61.0"]
