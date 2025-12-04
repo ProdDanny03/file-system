@@ -4,22 +4,15 @@ from typing import Union
 
 def resolve_path(path: Union[str, Path]) -> Path:
     """
-    Convert *path* to an absolute :class:`pathlib.Path` object.
-
-    Parameters
-    ----------
-    path : str | pathlib.Path
-        The path supplied by the user.
-
-    Returns
-    -------
-    pathlib.Path
-        An absolute, resolved path.
-
-    Raises
-    ------
-    TypeError
-        If *path* is not a ``str`` or ``Path``.
+    The `resolve_path` function accepts a string or Path object, converts it to a Path object, expands
+    `~`, resolves any relative components, and returns the normalized path.
+    @param path (Union[str, Path]) - The `path` parameter can be either a string or a `Path` object. The
+    function `resolve_path` will convert the input into a `Path` object, expand any `~` characters, and
+    resolve any relative components like `..`. Finally, it will return the normalized and resolved `
+    @returns The function `resolve_path` returns a `Path` object after converting the input path to a
+    `Path`, expanding `~`, and resolving any relative components like `..`. The returned `Path` object
+    is the normalized and resolved version of the input path.
+    Danny - 12/04/2025
     """
     # Accept both ``str`` and ``Path`` – the original code used a wrong
     # ``type(path) is str`` check which rejected strings.
