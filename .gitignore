@@ -1,2 +1,5 @@
 .venv
 .gitattributes
+main.py
+file_system
+file_system.egg-info
